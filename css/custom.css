@@ -1,0 +1,101 @@
+
+/* =========== All Section Style ============= */
+.container {
+    max-width: 1320px !important;
+}
+.sticky-menu {
+    padding: 0.5%;
+}
+.sticky-menu .logo {
+    line-height: 1;
+}
+
+/* =========== Home Section ============= */
+.s-slider-content p {
+    color: #000;
+}
+.slider-bg .overlay-bg {
+    position: absolute;
+    z-index: 2;
+    right: 10%;
+    bottom: 20%;
+}
+
+/* =========== About Section ============= */
+.about-img img {
+    width: 100%;
+    max-height: 550px;
+    border-radius: 12px;
+}
+.about-content {
+    margin-left: -5%;
+}
+
+/* =========== Linkedin Section ============= */
+.badge-container {
+    width: 300px; 
+    height: 500px; 
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.LI-profile-badge {
+    transform: scale(1.35);
+    transform-origin: left center;
+}
+.linkedin-area {
+    background-image: url(../img/bg/sandeep-bg.jpg);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px 0px;
+}
+.linkedin-profile {
+    margin-left: -2.5%;
+    margin-top: -2.5%;
+}
+
+/* =========== Testimonials Section ============= */
+.testi-author {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.testi-author img {
+    margin-right: 0%;
+    max-height: 50px;
+    margin-bottom: 2.5%;
+}
+.testimonial-active p {
+    font-size: 20px;
+    line-height: 28px;
+}
+.testimonial-active .ta-info {
+    margin-bottom: 0%;
+}
+
+/* =========== Partners Section ============= */
+.brand-area {
+    background-color: #000;
+}
+.brand-partners {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 50px;
+}
+.brand-partners {
+    text-align: center;
+}
+.brand-partners img {
+    max-width: 250px;
+}
+
+/* =========== Responsiveness ============= */
+@media only screen and (max-width: 991px) {
+    .about-content {
+        margin-left: 0%;
+    }
+}

@@ -206,7 +206,7 @@ footer .copyright-wrap a {
         padding-bottom: 60px;
     }
     .pl-60 {
-        padding-left: initial;
+        padding-left: 15px;
     }
     .menu-area {
         padding: 5px 0;
@@ -221,15 +221,28 @@ footer .copyright-wrap a {
     .section-title {
         text-align: center;
     }
+    .slider-bg {
+        min-height: 450px !important;
+    }
     .slider-bg .video-i.popup-video {
         display: inline-block;
+        margin-bottom: 20px;
+    }
+    .slider-content {
+        margin-left: 2.5%;
+    }
+    .s-slider-content p {
+        padding-right: 2%;
     }
     .about-content {
         margin-top: 5%;
         margin-left: 0%;
     }
+    /* .about-img img {
+        max-height: 100%;
+    } */
     .linkedin-area {
-        background-image: none;
+        background-position: 80% center;
     }
     .linkedin-area .faq-wrap-img {
         margin-top: 0%;
@@ -237,9 +250,13 @@ footer .copyright-wrap a {
     .linkedin-area .faq-wrap-img img {
         height: 0px;
     }
+    .linkedin-profile {
+        margin-left: 2.5%;
+        margin-top: 2.5%;
+    }
     #recognition .faq-btn {
         padding: 20px 0px 20px 20px;
-        padding-left: 15%;
+        padding-left: 7.5%;
     }
 }
 
@@ -249,9 +266,6 @@ footer .copyright-wrap a {
     }
     .pb-80 {
         padding-bottom: 40px;
-    }
-    .pl-60 {
-        padding-left: initial;
     }
     .menu-area {
         padding: 0;
@@ -278,6 +292,10 @@ footer .copyright-wrap a {
     }
     .linkedin-area .faq-wrap-img img {
         height: 0px;
+    }
+    .linkedin-profile {
+        margin-left: -4%;
+        margin-top: 5%;
     }
     #recognition .faq-btn {
         padding: 20px 0px 20px 20px;

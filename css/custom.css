@@ -87,7 +87,7 @@ a:hover {
     font-weight: 700;
     text-align: center;
     line-height: 26px;
-    color: #c20312;
+    color: #fff;
     background: #000;
     border-radius: 4px;
     padding: 1%;
@@ -157,6 +157,27 @@ a:hover {
 .testimonial-active .slick-dots {
     display: none !important;
 }
+
+/* =========== Blogs Section ============= */
+.bsingle__content .meta-info ul {
+    margin-bottom: 20px;
+}
+.bsingle__content:hover .readmore {
+    text-decoration: none;
+    color: #c20312;
+}
+
+/* =========== Contact Section ============ */
+.f-contact li {
+    text-align: center !important;
+}
+
+/* =========== Footer Section ============ */
+footer .copyright-wrap a {
+    color: #c20312;
+    text-decoration: none;
+}
+
 
 /* =========== Responsiveness ============= */
 @media only screen and (max-width: 991px) {

@@ -1,5 +1,11 @@
 
 /* =========== All Section Style ============= */
+a {
+    text-decoration: none
+}
+a:hover {
+    color: #c20312 !important;
+}
 .container {
     max-width: 1320px !important;
 }
@@ -13,6 +19,9 @@
 /* =========== Home Section ============= */
 .s-slider-content p {
     color: #000;
+}
+.slider-bg {
+    min-height: 625px !important;
 }
 .slider-bg .overlay-bg {
     position: absolute;
@@ -32,6 +41,13 @@
 }
 
 /* =========== Linkedin Section ============= */
+.linkedin-area {
+    background-image: url(../img/bg/sandeep-bg.jpg);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 90px 0px;
+}
 .badge-container {
     width: 300px; 
     height: 500px; 
@@ -44,17 +60,46 @@
     transform: scale(1.35);
     transform-origin: left center;
 }
-.linkedin-area {
-    background-image: url(../img/bg/sandeep-bg.jpg);
-    background-position: right;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 50px 0px;
-}
 .linkedin-profile {
     margin-left: -2.5%;
     margin-top: -2.5%;
 }
+
+/* =========== Recognition Section ============= */
+#recognition .faq-btn {
+    padding: 20px 0px 20px 20px;
+    padding-left: 7.5%;
+    display: flex;
+    align-items: center;
+}
+#recognition .faq-wrap .accordion {
+    counter-reset: cardCount;
+}
+#recognition .faq-wrap .card-header {
+    counter-increment: cardCount;
+}
+#recognition .faq-wrap .card-header h2 button::before {
+    position: absolute;
+    content: counter(cardCount, decimal-leading-zero);
+    left: 0px;
+    font-size: 22px;
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 700;
+    text-align: center;
+    line-height: 26px;
+    color: #c20312;
+    background: #000;
+    border-radius: 4px;
+    padding: 1%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#recognition .faq-wrap .card-header h2 button::after {
+    display: none
+}
+
 
 /* =========== Testimonials Section ============= */
 .testi-author {
@@ -91,6 +136,26 @@
 }
 .brand-partners img {
     max-width: 250px;
+}
+
+/* =========== News Section ============= */
+#news .s-single-services {
+    padding: 0px 0px 50px;
+}
+#news .s-single-services h3 {
+    min-height: 75px;
+    padding: 0% 2.5%;
+}
+#news .s-single-services.active .readmore {
+    text-decoration: none;
+}
+
+/* =========== Testimonial Section ============= */
+.testimonial-active .qt-img {
+    margin-bottom: 20px;
+}
+.testimonial-active .slick-dots {
+    display: none !important;
 }
 
 /* =========== Responsiveness ============= */

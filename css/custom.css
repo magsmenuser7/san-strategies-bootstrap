@@ -15,6 +15,9 @@ a:hover {
 .sticky-menu .logo {
     line-height: 1;
 }
+.section-title h2 {
+    font-size: 44px;
+}
 
 /* =========== Home Section ============= */
 .s-slider-content p {
@@ -31,6 +34,9 @@ a:hover {
 }
 
 /* =========== About Section ============= */
+#about {
+    background-color: #fff;
+}
 .about-img img {
     width: 100%;
     max-height: 550px;
@@ -66,6 +72,9 @@ a:hover {
 }
 
 /* =========== Recognition Section ============= */
+#recognition {
+    background-color: #fff;
+}
 #recognition .faq-btn {
     padding: 20px 0px 20px 20px;
     padding-left: 7.5%;
@@ -119,6 +128,12 @@ a:hover {
 .testimonial-active .ta-info {
     margin-bottom: 0%;
 }
+.testimonial-active .qt-img {
+    margin-bottom: 20px;
+}
+.testimonial-active .slick-dots {
+    display: none !important;
+}
 
 /* =========== Partners Section ============= */
 .brand-area {
@@ -144,21 +159,24 @@ a:hover {
 }
 #news .s-single-services h3 {
     min-height: 75px;
-    padding: 0% 2.5%;
+    padding: 0% 5%;
 }
 #news .s-single-services.active .readmore {
     text-decoration: none;
 }
-
-/* =========== Testimonial Section ============= */
-.testimonial-active .qt-img {
-    margin-bottom: 20px;
+#news .s-single-services .readmore {
+    background-color: #c20312;
+    color: #fff;
 }
-.testimonial-active .slick-dots {
-    display: none !important;
+#news .s-single-services:hover .readmore {
+    background-color: #000;
+    color: #fff !important;
 }
 
 /* =========== Blogs Section ============= */
+#blog {
+    background-color: #fff;
+}
 .bsingle__content .meta-info ul {
     margin-bottom: 20px;
 }
@@ -181,7 +199,88 @@ footer .copyright-wrap a {
 
 /* =========== Responsiveness ============= */
 @media only screen and (max-width: 991px) {
+    .pt-80 {
+        padding-top: 60px;
+    }
+    .pb-80 {
+        padding-bottom: 60px;
+    }
+    .pl-60 {
+        padding-left: initial;
+    }
+    .menu-area {
+        padding: 5px 0;
+        background-color: #fff;
+    }
+    .logo {
+        margin-bottom: 0%;
+    }
+    .menu-area.sticky-menu {
+        padding: 10px 0;
+    }
+    .section-title {
+        text-align: center;
+    }
+    .slider-bg .video-i.popup-video {
+        display: inline-block;
+    }
     .about-content {
+        margin-top: 5%;
         margin-left: 0%;
+    }
+    .linkedin-area {
+        background-image: none;
+    }
+    .linkedin-area .faq-wrap-img {
+        margin-top: 0%;
+    }
+    .linkedin-area .faq-wrap-img img {
+        height: 0px;
+    }
+    #recognition .faq-btn {
+        padding: 20px 0px 20px 20px;
+        padding-left: 15%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .pt-80 {
+        padding-top: 40px;
+    }
+    .pb-80 {
+        padding-bottom: 40px;
+    }
+    .pl-60 {
+        padding-left: initial;
+    }
+    .menu-area {
+        padding: 0;
+        background-color: #fff;
+    }
+    .menu-area.sticky-menu {
+        padding: 10px 0;
+    }
+    .section-title {
+        text-align: center;
+    }
+    .slider-bg .video-i.popup-video {
+        display: inline-block;
+    }
+    .about-content {
+        margin-top: 5%;
+        margin-left: 0%;
+    }
+    .linkedin-area {
+        background-image: none;
+    }
+    .linkedin-area .faq-wrap-img {
+        margin-top: 0%;
+    }
+    .linkedin-area .faq-wrap-img img {
+        height: 0px;
+    }
+    #recognition .faq-btn {
+        padding: 20px 0px 20px 20px;
+        padding-left: 15%;
     }
 }

@@ -10054,9 +10054,9 @@ blockquote a:hover {
     text-decoration: none !important;
 }
 
-.bsingle__content{
+/* .bsingle__content{
     margin-top: -6px !important;
-}
+} */
 .bsingle__content h2 a{
     font-size: 20px ;
     display: -webkit-box;

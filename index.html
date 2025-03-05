@@ -534,31 +534,34 @@
                             <h5>contact</h5>
                             <h2>get in touch</h2>
                         </div>
-                        <form action="mail.php" method="post" class="contact-form wow fadeInLeft  animated" data-animation="fadeInLeft" data-delay=".4s">
+                        <form action="https://api.web3forms.com/submit" method="POST" class="contact-form wow fadeInLeft  animated" data-animation="fadeInLeft" data-delay=".4s">
+                            <input type="hidden" name="access_key" value="REPLACE YOUR EMAIL ACCESS PUBLIC KEY">
+                            <input type="hidden" name="from_name" value="Sanstrategies Notification">
+                            <input type="hidden" name="replyto" value="sanstrategies.work@gmail.com">
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="contact-field p-relative c-name mb-15">
-                                        <input type="text" id="firstn" name="firstn" placeholder="Full Name" required>
+                                        <input type="text" id="name" name="name" placeholder="Your Full Name :" required>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="contact-field p-relative c-email mb-15">
-                                        <input type="text" id="email" name="email" placeholder="email address" required>
+                                        <input type="email" id="email" name="email" placeholder="Your Email Address :" required>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="contact-field p-relative c-subject mb-15">
-                                        <input type="tel" id="phone" name="phone" placeholder="phone number" required>
+                                        <input type="tel" id="phone" name="phone" placeholder="Your Phone Number :" required>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="contact-field p-relative c-subject mb-15">
-                                        <input name="services" id="sr" type="text" placeholder="subject">
+                                        <input type="text" id="custom_subject" name="subject" placeholder="Your Subject :" required>
                                     </div>
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="contact-field p-relative c-message mb-30">
-                                        <textarea name="message" id="message" cols="30" rows="10" placeholder="project details"></textarea>
+                                        <textarea id="message" name="message" cols="30" rows="10" placeholder="Your Message Details : "></textarea>
                                     </div>
                                 </div>
                                 <div class="col-lg-12 text-xl-right text-md-center">
@@ -623,6 +626,43 @@
     <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
     <script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/sanstrategies?hide_landing_page_details=1&hide_gdpr_banner=1', text: 'Schedule time with me', color: '#c20312', textColor: '#ffffff', branding: false }); }</script>
     <!-- Calendly badge widget end -->
+
+        <!-- ========== Web3forms Conatct From Submition =========== -->
+        <script>
+            const form = document.querySelector('.contact-form');
+            form.addEventListener("submit", function (e) {
+                const formData = new FormData(form);
+                e.preventDefault();
+    
+                var object = {};
+                formData.forEach((value, key) => {
+                    object[key] = value;
+                });
+                var json = JSON.stringify(object);
+    
+                fetch("https://api.web3forms.com/submit", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                        Accept: "application/json"
+                    },
+                    body: json
+                })
+                .then(async (response) => {
+                    const json = await response.json();
+                    if (response.status == 200) {
+                        window.location.href = "https://web3forms.com/success";
+                    } else {
+                        alert("Error: " + json.message);
+                    }
+                })
+                .catch((error) => {
+                    console.log(error);
+                    alert("Something went wrong!");
+                })
+                .finally(() => form.reset());
+                });
+        </script>
 </body>
 
 </html>

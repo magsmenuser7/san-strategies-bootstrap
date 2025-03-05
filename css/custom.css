@@ -30,7 +30,11 @@ a:hover {
 }
 #scrollUp {
 	right: 2.5%;
-	bottom: 10%;
+	bottom: 15%;
+}
+.calendly-badge-widget {
+    bottom: 7.5% !important;
+    right: 2.5% !important;
 }
 
 /* =========== Home Section ============= */

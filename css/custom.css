@@ -6,6 +6,15 @@ a {
 a:hover {
     color: #c20312 !important;
 }
+.btn.ss-btn {
+    font-weight: 500;
+    padding: 15px 25px;
+    border-radius: 6px;
+}
+.btn.ss-btn:hover {
+    background: #000;
+    color: #fff;
+}
 .container {
     max-width: 1320px !important;
 }
@@ -17,6 +26,10 @@ a:hover {
 }
 .section-title h2 {
     font-size: 44px;
+}
+#scrollUp {
+	right: 2.5%;
+	bottom: 2.5%;
 }
 
 /* =========== Home Section ============= */
@@ -40,7 +53,7 @@ a:hover {
 .about-img img {
     width: 100%;
     max-height: 550px;
-    border-radius: 12px;
+    border-radius: 6px;
 }
 .about-content {
     margin-left: -5%;
@@ -67,8 +80,11 @@ a:hover {
     transform-origin: left center;
 }
 .linkedin-profile {
-    margin-left: -2.5%;
-    margin-top: -2.5%;
+    margin-left: 2.5%;
+    margin-top: 2.5%;
+}
+.profile-badge__cta-btn--dark {
+    background-color: red !important;
 }
 
 /* =========== Recognition Section ============= */
@@ -76,6 +92,7 @@ a:hover {
     background-color: #fff;
 }
 #recognition .faq-btn {
+    line-height: 26px;
     padding: 20px 0px 20px 20px;
     padding-left: 7.5%;
     display: flex;
@@ -122,8 +139,9 @@ a:hover {
     margin-bottom: 2.5%;
 }
 .testimonial-active p {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 28px;
+    text-transform: capitalize;
 }
 .testimonial-active .ta-info {
     margin-bottom: 0%;
@@ -156,6 +174,7 @@ a:hover {
 /* =========== News Section ============= */
 #news .s-single-services {
     padding: 0px 0px 50px;
+    border-radius: 6px;
 }
 #news .s-single-services h3 {
     min-height: 75px;
@@ -177,6 +196,21 @@ a:hover {
 #blog {
     background-color: #fff;
 }
+#blog .bsingle__post .bsingle__post-thumb img {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+#blog .bsingle__post .bsingle__content {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.bsingle__content {
+    padding: 40px 30px 15px;
+}
+.bsingle__content h2 {
+    min-height: 50px;
+    margin-bottom: 2.5%;
+}
 .bsingle__content .meta-info ul {
     margin-bottom: 20px;
 }
@@ -189,15 +223,38 @@ a:hover {
 .f-contact li {
     text-align: center !important;
 }
+.f-widget {
+    border: 1px solid #c20312;
+    border-radius: 6px;
+}
+.contact-field input {
+    border-radius: 6px;
+    padding-left: 2.5%;
+    height: calc(2em + 1rem + 2px);
+}
+.contact-field textarea {
+	border-radius: 6px;
+    padding: 1.5%;
+}
 
 /* =========== Footer Section ============ */
 footer .copyright-wrap a {
     color: #c20312;
     text-decoration: none;
 }
+.copyright-wrap {
+    padding: 20px 30px 10px;
+    margin-top: 7.5%;
+    border-radius: 30px 30px 0px 0;
+}
 
 
 /* =========== Responsiveness ============= */
+@media screen and (min-width: 992px) and (max-width: 1300px) {
+    .second-menu .main-menu ul li {
+        margin-left: 1.5%;
+    }
+}
 @media only screen and (max-width: 991px) {
     .pt-80 {
         padding-top: 60px;
@@ -237,6 +294,7 @@ footer .copyright-wrap a {
     .about-content {
         margin-top: 5%;
         margin-left: 0%;
+        text-align: center;
     }
     /* .about-img img {
         max-height: 100%;

@@ -1,12 +1,13 @@
 
 /* =========== All Section Style ============= */
-@font-face {
+
+@import url('https://fonts.cdnfonts.com/css/rounded-elegance');
+/* @font-face {
     font-family: 'Rounded Elegance';
     font-style: normal;
     font-weight: 400;
     src: url('/fonts/Rounded_Elegance.woff') format('woff');
-}
-/* @import url('https://fonts.cdnfonts.com/css/rounded-elegance'); */
+} */
 
 body,
 h1,

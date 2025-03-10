@@ -21,6 +21,7 @@ a:hover {
 }
 .sticky-menu {
     padding: 0.5%;
+    z-index: 999;
 }
 .sticky-menu .logo {
     line-height: 1;
@@ -117,6 +118,16 @@ a:hover {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2) !important;
 }
 
+/* =========== Workspace Section ============= */
+.gallery-image {
+    padding: 15px 15px;
+    border-radius: 6px;
+}
+.gallery-image img {
+    width: auto;
+    margin-top: 0px;
+    margin-bottom: 2.5%;
+}
 
 /* =========== Recognition Section ============= */
 #recognition {

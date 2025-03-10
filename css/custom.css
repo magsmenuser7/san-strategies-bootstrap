@@ -309,6 +309,7 @@ a:hover {
 /* =========== Contact Section ============ */
 .f-contact li {
     text-align: center !important;
+    text-transform: none;
 }
 .f-widget {
     border: 1px solid #c20312;
@@ -317,11 +318,11 @@ a:hover {
 .contact-field input {
     border-radius: 6px;
     padding-left: 2.5%;
-    height: calc(2em + 1rem + 2px);
+    height: calc(2.5em + 2rem + 2px);
 }
 .contact-field textarea {
 	border-radius: 6px;
-    padding: 1.5%;
+    padding: 2%;
 }
 
 /* =========== Footer Section ============ */

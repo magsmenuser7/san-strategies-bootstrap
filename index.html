@@ -89,7 +89,7 @@
                                     </a>
                                     <span class="my-3">Brand Consultant</span>
                                     <h2 data-animation="fadeInUp" data-delay=".4s">
-                                        <img src="./img/about/sandeep-sign.png" alt="Sandeep N Signature">
+                                        <img src="./img/about/sandeepn-sign.png" alt="Sandeep N Signature">
                                     </h2>
                                     <p class="slider-content-desc">
                                         Founder - Magsmen || Brand Consultant || Consultant of the year 2023 || 
@@ -140,10 +140,7 @@
                                 help corporations, students, and individuals build thought-provoking career skills. Through 
                                 his coaching and speaking engagements, Sandeep motivates and empowers individuals to develop 
                                 their personal brands and achieve success in their professional endeavors.
-                            </p>
-                            <div class="info-sign mt-15">
-                                <img src="./img/about/sandeep-sign.png" alt="Sandeep N Signature">
-                            </div>                            
+                            </p>                            
                         </div>
                     </div>
                 </div>
@@ -439,7 +436,7 @@
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-3">
                         <div class="single-brand-item">
-                            <a href="#" target="_blank"><img src="img/partners/ythinq.png" alt="YThinq Logo"></a>
+                            <a href="https://www.youtube.com/@Intalkspodcast" target="_blank"><img src="img/partners/intalks.png" alt="Intalks Logo"></a>
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-3">
@@ -640,9 +637,8 @@
                             <h2>get in touch</h2>
                         </div>
                         <form action="https://api.web3forms.com/submit" method="POST" class="contact-form wow fadeInLeft  animated" data-animation="fadeInLeft" data-delay=".4s">
-                            <input type="hidden" name="access_key" value="REPLACE YOUR EMAIL ACCESS PUBLIC KEY">
+                            <input type="hidden" name="access_key" value="71711842-c386-4f60-be7f-07b149174d0d">
                             <input type="hidden" name="from_name" value="Sanstrategies Notification">
-                            <input type="hidden" name="replyto" value="sanstrategies.work@gmail.com">
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="contact-field p-relative c-name mb-25">
@@ -736,15 +732,13 @@
     <script>
         const form = document.querySelector('.contact-form');
         form.addEventListener("submit", function (e) {
-            const formData = new FormData(form);
             e.preventDefault();
-
-            var object = {};
+            const formData = new FormData(form);
+            let object = {};
             formData.forEach((value, key) => {
                 object[key] = value;
             });
-            var json = JSON.stringify(object);
-
+            let json = JSON.stringify(object);
             fetch("https://api.web3forms.com/submit", {
                 method: "POST",
                 headers: {
@@ -756,18 +750,18 @@
             .then(async (response) => {
                 const json = await response.json();
                 if (response.status == 200) {
+                    form.reset();
                     window.location.href = "https://web3forms.com/success";
                 } else {
                     alert("Error: " + json.message);
                 }
             })
             .catch((error) => {
-                console.log(error);
+                console.error(error);
                 alert("Something went wrong!");
-            })
-            .finally(() => form.reset());
             });
-    </script>
+        });
+    </script>    
 </body>
 
 </html>

@@ -1,13 +1,12 @@
 
 /* =========== All Section Style ============= */
 
-@import url('https://fonts.cdnfonts.com/css/rounded-elegance');
-/* @font-face {
+@font-face {
     font-family: 'Rounded Elegance';
     font-style: normal;
     font-weight: 400;
-    src: url('/fonts/Rounded_Elegance.woff') format('woff');
-} */
+    src: url('/fonts/ROUNDED_ELEGANCE.TTF') format('truetype');
+}
 
 body,
 h1,
@@ -75,6 +74,10 @@ a:hover {
     z-index: 2;
     right: 10%;
     bottom: 20%;
+}
+
+.slick-slide h2 img { 
+    max-width: 250px;
 }
 
 /* =========== About Section ============= */
@@ -236,6 +239,7 @@ a:hover {
 }
 .brand-partners img {
     max-width: 250px;
+    max-height: 70px;
 }
 
 /* =========== News Section ============= */
@@ -326,10 +330,12 @@ a:hover {
     border-radius: 6px;
     padding-left: 2.5%;
     height: calc(2.5em + 2rem + 2px);
+    text-transform: none;
 }
 .contact-field textarea {
 	border-radius: 6px;
     padding: 2%;
+    text-transform: none;
 }
 
 /* =========== Footer Section ============ */

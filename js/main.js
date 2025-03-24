@@ -588,3 +588,7 @@ $('.main-menu nav ul').onePageNav({
 	scrollOffset: top_offset,
 });
 })(jQuery);
+
+window.onload = function() {
+    document.body.style.zoom = "90%";
+  };

@@ -466,3 +466,11 @@ footer .copyright-wrap a {
         padding-left: 15%;
     }
 }
+/* Portfolio page  */
+.portfolio h5,h2{
+    text-align: center;
+}
+.portfolio .button-group {
+    padding-bottom: 0;
+    text-align: center;
+}

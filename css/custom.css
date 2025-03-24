@@ -5,7 +5,7 @@
     font-family: 'Rounded Elegance';
     font-style: normal;
     font-weight: 400;
-    src: url('/fonts/ROUNDED_ELEGANCE.TTF') format('truetype');
+    src: url('/fonts/rounded-elegance.ttf') format('truetype');
 }
 
 body,
@@ -351,6 +351,11 @@ footer .copyright-wrap a {
 
 
 /* =========== Responsiveness ============= */
+@media screen and (min-width: 1301px) {
+    .second-menu .main-menu ul li {
+        margin-left: 2.5%;
+    }
+}
 @media screen and (min-width: 992px) and (max-width: 1300px) {
     .second-menu .main-menu ul li {
         margin-left: 1.5%;

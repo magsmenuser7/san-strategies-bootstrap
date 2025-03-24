@@ -475,9 +475,13 @@ footer .copyright-wrap a {
     padding-bottom: 0;
     text-align: center;
 }
-/* @media only screen and (max-width: 570px) { */
-/* .my-masonry .filter-button-group {
+@media only screen and (max-width: 570px) {
+ .my-masonry .filter-button-group {
     display: flex !important;
-    flex-wrap: wrap;
+    flex-direction: column;
+    overflow: none;
 }
-} */
+.my-masonry .filter-button-group button{
+    margin-bottom: 10px;
+}
+} 

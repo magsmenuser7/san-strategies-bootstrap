@@ -465,6 +465,7 @@ footer .copyright-wrap a {
         padding: 20px 0px 20px 20px;
         padding-left: 15%;
     }
+   
 }
 /* Portfolio page  */
 .portfolio h5,h2{
@@ -474,3 +475,9 @@ footer .copyright-wrap a {
     padding-bottom: 0;
     text-align: center;
 }
+/* @media only screen and (max-width: 570px) { */
+/* .my-masonry .filter-button-group {
+    display: flex !important;
+    flex-wrap: wrap;
+}
+} */

@@ -77,7 +77,7 @@ a:hover {
 }
 
 .slick-slide h2 img { 
-    max-width: 250px;
+    max-width: 295px;
 }
 
 /* =========== About Section ============= */
@@ -152,9 +152,10 @@ a:hover {
     border-radius: 6px;
 }
 .gallery-image img {
-    width: auto;
+    width: 100%;
     margin-top: 0px;
-    margin-bottom: 2.5%;
+    margin-bottom: 0px;
+    object-fit: cover;
 }
 
 /* =========== Recognition Section ============= */
@@ -468,9 +469,14 @@ footer .copyright-wrap a {
    
 }
 /* Portfolio page  */
-.portfolio h5,h2{
+.about-title h2{
+    text-align: left;
+}
+
+.portfolio h2 {
     text-align: center;
 }
+
 .portfolio .button-group {
     padding-bottom: 0;
     text-align: center;
@@ -485,3 +491,9 @@ footer .copyright-wrap a {
     margin-bottom: 10px;
 }
 } 
+
+.slider-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

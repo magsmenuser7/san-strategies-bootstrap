@@ -5,7 +5,7 @@
     font-family: 'Rounded Elegance';
     font-style: normal;
     font-weight: 400;
-    src: url('/fonts/rounded-elegance.ttf') format('truetype');
+    src: url('../fonts/rounded-elegance.ttf') format('truetype');
 }
 
 body,
@@ -148,7 +148,7 @@ a:hover {
 
 /* =========== Workspace Section ============= */
 .gallery-image {
-    padding: 15px 15px;
+    padding: 10px;
     border-radius: 6px;
 }
 .gallery-image img {
